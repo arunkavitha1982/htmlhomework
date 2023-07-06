@@ -8,7 +8,7 @@
 
 
 
-  <form action="/action_page.php">
+  <form action="/action_page.php" method="get">
 
     <h1><u>Input Type Text and Password</u></h1><br><br>
 
@@ -20,18 +20,35 @@
 
     <input type="password" id="pwd" name="password" maxlength="7"><br><br>
 
-    <h1><u>Input type date</u></h1>
+    <h1><u>Input type Date and Datetime-local</u></h1>
 
-    <label for="date">enter your date of age:</label>
+    <label for="birthday">enter your Date of age and Birth time:</label>
 
-    <input type="date" id="date" name="date" max="unlimited"><br><br>
+    <input type="datetime-local" id="birthday" name="birthday" max="unlimited"><br><br>
+
+    <label for="datemin">Only those born after 2007 can register:</label>
+
+    <input type="date" id="datemin" name="datemin" min="2007-01-01"><br><br>
+
+    <label for="datemin">Only those born before 2005 can register:</label>
+
+    <input type="date" id="datemin" name="datemin" max="2005-12-31"><br><br>
+
 
     <h1><u>Input type file</u></h1>
 
-     <label for="file">add your file</label>
+    <label for="file">add your file</label>
 
     <input type="file" id="file" name="file">
-    
+
+    <h1><u>Input Type Email</u></h1>
+
+    <label for="email">enter your email ID:</label>
+
+    <input type="email" id="email" name="email">
+
+
+
 
 
 
@@ -55,27 +72,146 @@
 
     <h1><u>Input Type Checkbox</u><br></h1>
 
-    <input type="checkbox" id="helicopter" name="Arun" value=""><img
-      src="https://kedarnathjiyatra.com/public_html/kedarnathjiyatra.com/wp-content/uploads/2022/02/helicopter-3.jpg"
-      alt="helicopter" height="100px">
-
     <label for="helicopter">helicopter</label><br><br>
 
-    <input type="checkbox" id="Airplane" name="Arun" value="Airplane"><img
-      src="https://media.cntraveler.com/photos/576834ff90b3537d7c010c05/4:3/w_5120,h_3840,c_limit/GettyImages-162672165.jpg"
-      alt="Airplane" height="100px">
+    <input type="checkbox" id="helicopter" name="Arun" value="">
+
+    <img src="https://kedarnathjiyatra.com/public_html/kedarnathjiyatra.com/wp-content/uploads/2022/02/helicopter-3.jpg"
+      alt="helicopter" height="100px">
 
     <label for="Airplane">Airplane</label><br><br>
 
-    <input type="checkbox" id="Dragon" name="Arun" value="Dragon"><img src="https://wallpapercave.com/wp/wp2013562.jpg"
-      alt="Dragon" height="100px">
+
+    <input type="checkbox" id="Airplane" name="Arun" value="Airplane">
+
+    <img
+      src="https://media.cntraveler.com/photos/576834ff90b3537d7c010c05/4:3/w_5120,h_3840,c_limit/GettyImages-162672165.jpg"
+      alt="Airplane" height="100px">
 
     <label for="Dragon"> Dragon</label><br><br>
 
+    <input type="checkbox" id="Dragon" name="Arun" value="Dragon">
+
+    <img src="https://wallpapercave.com/wp/wp2013562.jpg" alt="Dragon" height="100px">
 
 
 
-    <input type="submit" value="Submit">
+
+    <h1><u>Textarea</u></h1>
+
+    <textarea name="Arunkumar" rows="30" cols="50">I miss you Amma Appa 
+
+  </textarea>
+
+    <h1><u>The fieldset and legend Elements</u></h1>
+
+    <fieldset>
+
+      <legend>Personalia:</legend>
+
+      <label for="fname">First name:</label><br>
+
+      <input type="text" id="fname" name="fname"><br>
+
+      <label for="lname">Last name:</label><br>
+
+      <input type="text" id="lname" name="lname"><br><br>
+
+    </fieldset><br><br>
+
+    <h1><u>Input Type Color</u></h1>
+
+    <label for="fav_color">Choose your favorite color</label><br>
+
+    <input type="color" id="fav_color" name="fav_color">
+
+    <h1><u>Input Type Number</u></h1>
+
+    <label for="Arunkumar">Quantity (between 0 and 1000)</label><br>
+
+    <input type="number" id="Arunkumar" name="Arunkumar" min="0" max="1000" step="100">
+
+    <h1><u>Input Type Range</u></h1>
+
+    <label for="volumn">volumn</label>
+
+    <input type="range" id="volumn" name="volumn" min="0" max="100">
+
+    <h1><u></u></h1>
+
+
+
+
+
+    <h1><u>Button</u></h1>
+
+    <button type="button" onclick="alert('Amma!')">Call me!</button><br><br>
+
+    <h1><u>Datalist</u></h1>
+
+    <input list="browsers" name="browser">
+
+    <datalist id="browsers">
+
+      <option value="Arunkumar">
+
+      <option value="Sariga">
+
+      <option value="Jagan">
+
+      <option value="Dharani">
+
+      <option value="Sunil">
+
+      <option value="Athu"></option>
+
+    </datalist>
+
+    <h1><u>Select</u></h1>
+
+    <label for="cartoon">Choose yours fav cartoon:</label>
+
+    <select id="cartoon" name="cartoon">
+
+      <option value="Doraemon">Doraemon</option>
+
+      <option value="Shinchan">Shinchan</option>
+
+      <option value="Transformers prime" selected>Transformers prime</option>
+
+      <option value="Chhota Bheem">Chhota Bheem</option>
+
+      <option value="Dragon Booster">Dragon Booster</option>
+
+    </select><br><br>
+
+    <label for="cartoon">Choose yours fav cartoon:</label>
+
+    <select id="cartoon" name="cartoon" size="5">
+
+      <option value="Doraemon">Doraemon</option>
+
+      <option value="Shinchan">Shinchan</option>
+
+      <option value="Transformers prime" selected>Transformers prime</option>
+
+      <option value="Chhota Bheem">Chhota Bheem</option>
+
+      <option value="Dragon Booster">Dragon Booster</option>
+
+    </select><br><br>
+
+
+
+
+    <input type="image" src="https://cultivoslima.com/img/Submit.gif" alt="Submit" width="20%" height="20%">
+
+
+    <input type="image"
+      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPEc1oIZx8Y0fW8U5_p5jNI4VMqD3Omj-s6A&usqp=CAU"
+      alt="Reset" width="20%" height="20%">
+
+    <input type="reset">
 
   </form>
 
