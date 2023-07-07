@@ -2,29 +2,10 @@
 
 <head>
 
-    <style>
-        body {
-            text-align: center;
-            text-transform: capitalize;
-            color: black;
-            background-color: rgba(127, 255, 212, 0.122);
-            font-family: "Sofia", sans-serif;
-            background-image: url('https://png.pngtree.com/background/20230415/original/pngtree-abstract-blue-background-and-wallpaper-free-victor-vector-picture-image_2443075.jpg');
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-attachment: fixed;
+    <link rel="stylesheet" href="form_css.css">
 
-        }
+    
 
-        h1 {
-            color: white;
-            text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
-        }
-
-        fieldset {
-            text-align: center;
-        }
-    </style>
     <title>FORM</title>
     <h1>College Admission Form</h1>
 </head>
@@ -32,11 +13,23 @@
 <body>
 
     <fieldset style="width: 500px;">
-        <legend>Personalia details:</legend>
+        <legend>Personalia details:</legend><BR>
         <label for="fname">First name:</label>
         <input type="text" id="fname" name="fname"><br><br>
         <label for="lname">last Name:</label>
         <input type="text" name="lname" id="lname"><br><br>
+        <label for="gender">Genter:</label>
+
+
+        <input type="radio" name="male" id="male">
+        <label for="male">Male</label>
+
+        <input type="radio" name="male" id="male">
+        <label for="male">Female</label>
+
+        <input type="radio" name="male" id="male">
+        <label for="male">Transgender</label><br><br>
+
         <label for="data">date of Birth:</label>
         <input type="date" id="date" name="date"><br><br>
         <label for="email">email:</label>
@@ -49,11 +42,36 @@
         <input type="number" name="text" id="text"><br><br>
         <label for="number">Father Number:</label>
         <input type="number" name="number" id="number"><br><br>
+        <label for ="caste">Caste:</label>
+        
+        <input type="radio" name="caste" id="caste">
+        <label for="caste">ST</label>
+        <input type="radio" name="caste" id="caste">
+        <label for="caste">SC</label>
+        <input type="radio" name="caste" id="caste">
+        <label for="caste">other</label>
 
     </fieldset><br><br>
 
+    <fieldset style="width: 500px;"><br>
+        <legend>Other Details</legend>
+        <label for="aadhar number">Aadhar Number:</label>
+        <input type="number" name="aadhar number" id="aadhar number"><br><br>
+        <label for="Ration card">Ration card:</label>
+        <input type="text" name="Ration card" id="Ration card"><br><br>
+        <label for="Bank Book">Bank Book Number:</label>
+        <input type="text" name="Bank Book" id="Bank Book"><br><br>
+        <label for="income">Income:</label>
+        <input type="number" name="income" id="income"><br><br>
+        <label for="Caste">Caste Code :</label>
+        <input type="text" name="Caste" id="Caste"><br><br>
+
+        
+        
+    </fieldset><br><br>
+
     <fieldset style="width: 500px;">
-        <legend>Enter Your Address</legend>
+        <legend>Enter Your Address</legend><BR>
         <label for="address">Door num:</label>
         <input type="text" name="address" id="address">
 
@@ -100,12 +118,12 @@
 
         </select><br><br>
         <label for="Country">Country:</label>
-        <input type="text" name="Country" id="Country"><br><br>
+        <input type="text" name="Country" id="Country"><br><br><BR>
 
-    </fieldset><br><br>
+    </fieldset><br><br><br>
 
     <fieldset style="width: 500px;">
-        <legend>School Information</legend>
+        <legend>School Information</legend><BR>
         <label for="roll no">12 Roll Number:</label>
         <input type="number" name="roll no" id="roll no"><br><br>
         <label for="total mark">Total Mark:</label>
@@ -124,11 +142,62 @@
 
 
 
-        <input type="submit">
+    </fieldset><br><br>
+    <FIeldset style="width: 500px;">
+        <Legend>College Information</Legend>
+        <label for="College">college Name:</label>
+        <input type="text" name="College" id="College" ><br><br>
+        <label for="department">Department:</label>
+        <select name="department" id="department">
+            <option value=" "> </option>            
+            <option value="BBA- Bachelor of Business Administration">BBA</option>
+            <option value="BMS- Bachelor of Management Science">BMS</option>
+            <option value="BFA- Bachelor of Fine Arts">BFA</option>
+            <option value="BEM- Bachelor of Event Management">BEM</option>
+            <option value="Integrated Law Course- BA + LL.B">BA + LL.B</option>
+            <option value="BJMC- Bachelor of Journalism and Mass Communication">BJMC</option>
+            <option value="BE/B.Tech- Bachelor of Technology">B.Tech</option>
+            <option value="BCA- Bachelor of Computer Applications">BCA</option>
+            <option value="B.Sc.- Information Technology">BSC IT</option>
+            <option value="B.Sc- Nursing">B.Sc- Nursing</option>
+            <option value="B.Sc.- Physics">B.Sc.- Physics</option>
+            <option value="B.Sc. Chemistry">B.Sc. Chemistry</option>
+            <option value="B.Sc. Mathematics">B.Sc. Mathematics</option>
+            <option value="B.Com- Bachelor of Commerce">B.COM</option>
+            <option value="BBA- Bachelor of Business Administration">BBA</option>
+            <option value="B.Com (Hons.)">B.Com (Hons.)</option>
+            <option value="Integrated Law Program- B.Com LL.B.">B.Com LL.B</option>
+            <option value="Integarted Law Program- BBA LL.B">BBA LL.B</option>
+            <option value="CA- Chartered Accountancy">CA</option>
+            <option value="CS- Company Secretary">CS</option>
 
-        <input type="reset">
 
-    </fieldset>
+
+        </select><br><br>
+
+
+        <input type="radio" name="shift" id="shift">
+        <label for="shift">1 Shift</label>
+
+        <input type="radio" name="shift" id="shift">
+        <label for="shift">2 Shift </label><br><br>
+        <label for="address">City :</label>
+        <input type="text" name="address" id="address"><br><br>
+        <label for="District'">District:</label>
+        <input type="text" name="District'" id="District'"><br><br>
+        <label for=""></label>
+
+
+
+
+
+
+
+
+    </FIeldset><br><br>
+    <input type="submit" id="input">
+
+    <input type="reset" id="input">
 
 
 
