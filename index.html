@@ -93,7 +93,7 @@
     </pre>
 </h2>
 
-<br><img src="rayudu.jpg" width="40%"></br> 
+<br><img src="rayudu.jpg" width="40%"></br>
 
 <br><img src="IMG-20230401-WA0052.jpg" alt="masinagudi" usemap="#masinagudi"><br><br>
 
@@ -107,7 +107,9 @@
 
 <img src="what-is-venn-1.jpg" alt="vennil" usemap="#arunkumar">
 <map name="arunkumar">
-  <area shape="poly" coords="562,188,440,135,320,151,218,207,170,272,131,365,130,477,172,575,218,633,286,685,393,707,479,696,518,657,496,592,455,500,448,376,493,249,562,188" href="https://www.discoveryplus.in/" alt="discovery">
+  <area shape="poly"
+    coords="562,188,440,135,320,151,218,207,170,272,131,365,130,477,172,575,218,633,286,685,393,707,479,696,518,657,496,592,455,500,448,376,493,249,562,188"
+    href="https://www.discoveryplus.in/" alt="discovery">
   <area shape="poly" coords="568,186,494,268,458,365,460,458,492,557,576,646,644,581,689,497,695,388,649,276,568,186"
     href="https://earth.google.com/web/@0,-4.56980005,0a,22251752.77375655d,35y,0h,0t,0r" alt="google earth">
   <area shape="poly"
@@ -116,43 +118,43 @@
 </map>
 <H1><br><a href="https://www.youtube.com">youtube</a></br></h1>
 
-  <button onclick="getLocation()">Try It</button>
+<button onclick="getLocation()">Try It</button>
 
-    <p id="demo"></p>
+<p id="demo"></p>
 
-    <script>
-        var x = document.getElementById("demo");
+<script>
+  var x = document.getElementById("demo");
 
-        function getLocation() {
-            if (navigator.geolocation) {
-                navigator.geolocation.getCurrentPosition(showPosition, showError);
-            } else {
-                x.innerHTML = "Geolocation is not supported by this browser.";
-            }
-        }
+  function getLocation() {
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(showPosition, showError);
+    } else {
+      x.innerHTML = "Geolocation is not supported by this browser.";
+    }
+  }
 
-        function showPosition(position) {
-            x.innerHTML = "Latitude: " + position.coords.latitude +
-                "<br>Longitude: " + position.coords.longitude;
-        }
+  function showPosition(position) {
+    x.innerHTML = "Latitude: " + position.coords.latitude +
+      "<br>Longitude: " + position.coords.longitude;
+  }
 
-        function showError(error) {
-            switch (error.code) {
-                case error.PERMISSION_DENIED:
-                    x.innerHTML = "User denied the request for Geolocation."
-                    break;
-                case error.POSITION_UNAVAILABLE:
-                    x.innerHTML = "Location information is unavailable."
-                    break;
-                case error.TIMEOUT:
-                    x.innerHTML = "The request to get user location timed out."
-                    break;
-                case error.UNKNOWN_ERROR:
-                    x.innerHTML = "An unknown error occurred."
-                    break;
-            }
-        }
-        </script>
+  function showError(error) {
+    switch (error.code) {
+      case error.PERMISSION_DENIED:
+        x.innerHTML = "User denied the request for Geolocation."
+        break;
+      case error.POSITION_UNAVAILABLE:
+        x.innerHTML = "Location information is unavailable."
+        break;
+      case error.TIMEOUT:
+        x.innerHTML = "The request to get user location timed out."
+        break;
+      case error.UNKNOWN_ERROR:
+        x.innerHTML = "An unknown error occurred."
+        break;
+    }
+  }
+</script>
 </form>
 </body>
 
