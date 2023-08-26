@@ -12,27 +12,24 @@
     <h1><u>College Admission Form</u></h1>
 </head>
 
-<body>
-
+<body style="text-align: center;">
+<form>
     <fieldset style="width: 500px;">
-        <legend><h1>details:</h1> </legend><br>
-        <label for="fname">First name:</label>
+        <legend>
+            <h2>Personal details:</h2>
+        </legend><br>
+        <label for="fname">First name :   </label>
         <input type="text" id="fname" name="fname"><br><br>
         <label for="lname">last Name:</label>
         <input type="text" name="lname" id="lname"><br><br>
         <label for="gender">Genter:</label>
-
-        <!-- radio button -->
-        <input type="radio" name="male" id="male">
-        <label for="male">Male</label>
-
-        <input type="radio" name="male" id="male">
-        <label for="male">Female</label>
-
-        <input type="radio" name="male" id="male">
-        <label for="male">Transgender</label><br><br>
-        <!-- date type -->
-
+ <select name="gender" id="gender">
+            <option value=" "> </option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Transgender">Transgender</option>
+        </select><br><br>
+        
         <label for="data">date of Birth:</label>
         <input type="date" id="date" name="date"><br><br>
         <!-- email type -->
@@ -42,24 +39,27 @@
         <!-- text type -->
         <label for="father">Father Name:</label>
         <input type="text" name="father" id="father"><br><br>
-        <label for="mother">Mother Name:</label>
+        <label for="mother">MotherName:</label>
         <input type="text" name="mother" id="mother"><br><br>
-        <label for="text">yours Phone Number:</label>
+        <label for="text">yoursPhoneNumber:</label>
         <!-- number type -->
 
-        <input type="number" name="text" id="text"><br><br>
+        <input type="text" name="text" id="text"><br><br>
         <label for="number">Father Number:</label>
-        <input type="number" name="number" id="number"><br><br>
-        <label for="caste">Caste:</label>
+        <input type="text" name="number" id="number"><br><br>
+        
 
         <!-- radio button -->
 
-        <input type="radio" name="caste" id="caste">
-        <label for="caste">ST</label>
-        <input type="radio" name="caste" id="caste">
-        <label for="caste">SC</label>
-        <input type="radio" name="caste" id="caste">
-        <label for="caste">other</label><br><br>
+        <label for="Caste">Caste:</label>
+        <select name="Caste" id="Caste">
+            <option value=" "> </option>
+            <option value="SC">SC</option>
+            <option value="ST">ST</option>
+            <option value="MBC">MBC</option>
+            <option value="Others">Others</option>
+        </select><br><br>
+
 
         <!-- file type -->
 
@@ -68,24 +68,27 @@
 
     </fieldset><br><br>
 
+
+    <!-- next form -->
+
     <fieldset style="width: 500px;"><br>
-        <legend>Other Details</legend>
+        <legend>
+            <h2> Details</h2>
+        </legend>
 
         <!-- number type -->
 
         <label for="aadhar number">Aadhar Number:</label>
-        <input type="number" name="aadhar number" id="aadhar number"><br><br>
+        <input type="text" name="aadhar number" id="aadhar number"><br><br>
         <!-- text type  -->
         <label for="Ration card">Ration card:</label>
         <input type="text" name="Ration card" id="Ration card"><br><br>
         <!-- number type -->
 
         <label for="Bank Book">Bank Book Number:</label>
-        <input type="number" name="Bank Book" id="Bank Book"><br><br>
-        <label for="income">Income:</label>
-        <input type="number" name="income" id="income"><br><br>
-        <!-- text type  -->
-
+        <input type="text" name="Bank Book" id="Bank Book"><br><br>
+        <label for="income">Income :</label>
+        <input type="text" name="income" id="income"><br><br>
         <label for="Caste">Caste Code :</label>
         <input type="text" name="Caste" id="Caste"><br><br>
 
@@ -104,7 +107,7 @@
         <input type="text" name="school name" id="school Name"><br><br>
         <!-- number type -->
         <label for="text">Pin Code:</label>
-        <input type="number" name="text" id="text"><br><br>
+        <input type="text" name="text" id="text"><br><br>
         <!-- text type  -->
         <label for="text">village:</label>
         <input type="text" name="text" id="text"><br><br>
@@ -146,17 +149,45 @@
 
         </select><br><br>
         <label for="Country">Country:</label>
-        <input type="text" name="Country" id="Country"><br><br><BR>
+        <!-- <input type="text" name="Country" id="Country"><br><br><BR> -->
+        <select name="Country" id="Country">
 
+
+            <option value=" "> </option>
+            <option value="India">India</option>
+            <option value="United States">United States</option>
+            <option value="United Kingdom">United Kingdom</option>
+            <option value="Switzerland">Switzerland</option>
+            <option value="Singapore">Singapore</option>
+            <option value="Australia">Australia</option>
+            <option value="Mainland China">Mainland China</option>
+            <option value="Canada">Canada</option>
+            <option value="France">France</option>
+            <option value="Hong Kong SAR">Hong Kong SAR</option>
+            <option value="Japan">Japan</option>
+            <option value="Germany">Germany</option>
+            <option value="South Korea">South Korea</option>
+            <option value="Netherlands">Netherlands</option>
+            <option value="Belgium">Belgium</option>
+            <option value="Malaysia">Malaysia</option>
+            <option value="New Zealand">New Zealand</option>
+            <option value="Mizoram">Mizoram</option>
+            <option value="Nagaland">Nagaland</option>
+            <option value="Argentina">Argentina</option>
+
+
+
+
+        </select>
     </fieldset><br><br><br>
 
     <fieldset style="width: 500px;">
         <legend>School Information</legend><BR>
         <!-- number type  -->
         <label for="roll no">12 Roll Number:</label>
-        <input type="number" name="roll no" id="roll no"><br><br>
+        <input type="text" name="roll no" id="roll no"><br><br>
         <label for="total mark">Total Mark:</label>
-        <input type="number" name="total mark" id="total mark"><br><br>
+        <input type="text" name="total mark" id="total mark"><br><br>
         <!-- text type  -->
         <label for="school name">School Name:</label>
         <input type="text" name="school name" id="school name"><br><br>
@@ -164,7 +195,7 @@
         <input type="text" name="address" id="address"><br><br>
         <!-- number type  -->
         <label for="Pincode">Pincode:</label>
-        <input type="number" name="Pincode" id="Pincode"><br><br>
+        <input type="text" name="Pincode" id="Pincode"><br><br>
         <!-- text type  -->
         <label for="text">village:</label>
         <input type="text" name="text" id="text"><br><br>
@@ -207,32 +238,27 @@
 
         </select><br><br>
 
-
-        <input type="radio" name="shift" id="shift">
-        <label for="shift">1 Shift</label>
-
-        <input type="radio" name="shift" id="shift">
-        <label for="shift">2 Shift </label><br><br>
-        <label for="address">City :</label>
-        <input type="text" name="address" id="address"><br><br>
-        <label for="District'">District:</label>
-        <input type="text" name="District'" id="District'"><br><br>
-        <label for=""></label>
+        <label for="shift">which shift :</label>
+        <select name="shift" id="shift">
+            <option value=""></option>
+<option value="First shift">First shift</option>
+<option value="Second shift">Second shift</option>
 
 
 
 
-
-
-
+        </select>
 
     </FIeldset><br><br>
+
     <input type="button" value="Submit" id="input">
 
     <input type="button" value="reset" id="input">
 
 
-
+</form>
 </body>
 
 </html>
+
+
