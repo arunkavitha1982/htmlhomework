@@ -3,16 +3,23 @@ p{
     font-family: 'Times New Roman', Times, serif;
 }
 body{
-    background-color: aliceblue;
+    /* background-color: aliceblue; */
+    background-image: url(https://img.freepik.com/premium-photo/grey-abstract-background_427757-34.jpg);
 }
 h2{
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Times New Roman';
     text-align: center;
+    color: blue;
+    
+       
 }
 
 h1{
     font-family: 'Times New Roman', Times, serif;
     text-align: center;
     color: blue;
-    text-shadow:1px 1px 2px black, 0 0 50px white, 0 0 25px whitesmoke;
+    text-shadow:1px 1px 2px black, 0 0 50px rgb(41, 160, 245), 0 0 25px whitesmoke;
+}
+head{
+    text-align: center;
 }
