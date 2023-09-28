@@ -1,83 +1,62 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
-<head style="text-align: center;">
-  <link rel="stylesheet" href="webside_css.css">
-  <link rel="icon" type="image/x-icon" href="image\collegelogo.jpg">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<head>
+    <meta charset="UTF-8">
+    <h1 style="text-align:center;">HOPE 3 ADMISSION </h1>
 
+<link rel="stylesheet" href="form_css.css">
 
-
-  <title>College Admission Form</title>
-  <h1><u>College Admission Form</u></h1><br>
 </head>
+    
 
 <body>
-  <form>
-    <fieldset><br>
-      <label for="fname">First name :</label>
-      <input type="text" id="fname" name="fname"><br><br>
+    <form>
+        <fieldset style="width: 500px;">
+            <lable for="fname">first name:</lable>
+            <input type="text" id="fname"><br><br>
+            <lable for="lname">last name:</lable>
+            <input type="text" id="lname"><br><br>
 
-      <label for="lname">last Name :</label>
-      <input type="text" name="lname" id="lname"><br><br>
-
-      <label for="gender">Genter :</label>
-      <select name="gender" id="gender">
-        <option value=" "> </option>
-        <option value="Male">Male</option>
-        <option value="Female">Female</option>
-        <option value="Transgender">Transgender</option>
-      </select><br><br>
-
-      <!-- <label for="data">date of Birth:</label>
-      <input type="date" id="date" name="date"><br><br> -->
-
-
-      <label for="email">email :</label>
-      <input type="email" id="email" name="email"><br><br>
-
-      <label for="father">Father Name :</label>
-      <input type="text" name="father" id="father"><br><br>
-
-      <label for="mother">MotherName :</label>
-      <input type="text" name="mother" id="mother"><br><br>
-
-
-      <label for="text">yoursPhoneNumber :</label>
-      <input type="text" name="text" id="text"><br><br>
-
-
-      <label for="number">Father Number :</label>
-      <input type="text" name="number" id="number"><br><br>
-
-
-
-
-      <label for="Caste">Caste :</label>
-      <select name="Caste" id="Caste">
-        <option value=" "> </option>
-        <option value="SC">SC</option>
-        <option value="ST">ST</option>
-        <option value="MBC">MBC</option>
-        <option value="Others">Others</option>
-      </select><br><br>
-
-
-
-      <label for="file">Upload your photo :</label>
-      <input type="file" name="file" id="file"><br><br><br>
-      <input type="button" value="Submit" id="Submit">
-      <input type="button" value="Reset" id="Submit">
-
-    </fieldset><br><br>
-
-
-    
-    
-
-
-
-  </form>
+            <lable for="age">age :</lable>
+            <input type="number" id="age"><br><br>
+            <lable for="dob">date :</lable>
+            <input type="date" id="dob"><br><br>
+            <lable for="gender">gender :</lable>
+            <input type="radio" id="female" name="gender">
+            <lable for="female">female </lable>
+            <input type="radio" id="male" name="gender">
+            <lable for="male">male </lable><br><br>
+            <lable for="email">email :</lable>
+            <input type="email" id="mail"><br><br>
+            <lable for="mother's name">mother's name:</lable>
+            <input type="text" id="name"><br><br>
+            <lable for="father's name">father's name:</lable>
+            <input type="text" id="name"><br><br>
+            <lable for="phone number">phone number:</lable>
+            <input type="number" id="phone"><br><br>
+            address<br><br>
+            <lable for="door number">door number:</lable>
+            <input type="text" id="door number"><br><br>
+            <lable for="street">street:</lable>
+            <input type="text" id="street"><br><br>
+            <lable for="area">area:</lable>
+            <input type="text" id="area">
+            <br><br>
+            <lable for="pincode">pincode:</lable>
+            <input type="number" id="pincode"><br><br>
+            <lable for="10 th mark">10 th mark:</lable>
+            <input type="number" id="10 th mark"><br><br>
+            <lable for="12 th mark">12 th mark:</lable>
+            <input type="number" id="12 th mark"><br><br>
+            <lable for="course">course:</lable>
+            <input type="text" id="course"><br><br>
+            <lable for="collage name">collage name:</lable>
+            <input type="text" id="collage name"><br><br>
+            <lable for="photo">photo:</lable>
+            <input type="file" id="photo"><br><br>
+        </fieldset>
+    </form>
 </body>
 
 </html>
