@@ -5,37 +5,71 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MY Portfolio</title>
+    <link rel="stylesheet" href="portfolio.css">
     <link rel="icon" href="image\WhatsApp Image 2023-10-02 at 13.51.12_3e84b517.jpg">
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    
+
 </head>
 <style>
     .social-icons a {
-    display: inline-block;
-    margin-right: 20px;
-    color: #333;
-    font-size: 24px;
-    transition: color 0.3s ease;
-}
-body {
-    font-family: 'Arial', sans-serif;
-}
+        display: inline-block;
+        margin-right: 20px;
+        color: #333;
+        font-size: 24px;
+        transition: color 0.3s ease;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        background: transparent;
+        border: 2px solid #333;
+        border-radius: 50%;
+        font-size: 20px;
+        text-decoration: none;
+        margin: 38px 15px 38px 0;
 
-header h1 {
-    font-size: 36px;
-    margin-bottom: 10px;
-}
-header p {
-    font-size: 18px;
-}
+    }
+
+    .social-icons a:hover {
+        background: #5e5d5d;
+        color: #0593f8;
+
+    }
+
+    body {
+        font-family: 'Arial', sans-serif;
+    }
+
+    header h1 {
+        font-size: 36px;
+        margin-bottom: 10px;
+    }
+
+    header p {
+        font-size: 18px;
+    }
+
+    .header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 20px 10%;
+        background: transparent;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 100;
+    }
 </style>
 
 <body>
-    <header class="bg-dark text-white text-center py-5">
+    <header class="bg-dark text-white text-center py-3">
         <h1>Arunkumar</h1>
         <p class="lead">BCA First Year Student</p>
     </header>
@@ -51,7 +85,7 @@ header p {
                 </p>
             </div>
             <div class="col-lg-6">
-                <img src="image/my photo 1.jpg" alt="mykjdhfisdh Photo" class="img-fluid rounded-circle" width="40%">
+                <img src="image/my photo 1.jpg" alt="mykjdhfisdh Photo" class="img-fluid rounded-circle" width="40%" style="border-color: #333;">
             </div>
         </div>
     </section>
@@ -115,11 +149,11 @@ header p {
             <ul>
                 <li>Name - K.Arunkumar</li>
                 <li>number - 6381689021</li>
-                <li>email - arunkumar.msg1982@gmail.com</li>
+                <li>email - arunkumar.msg2005@gmail.com</li>
             </ul>
             </p>
 
-            <div class="social-icons" style="text-align: center;">
+            <div id="" class="social-icons" style="text-align: center;">
                 <a href="https://www.instagram.com/i_am_a_rocker/" target="_blank">
                     <i class="fab fa-instagram"></i>
                 </a>
