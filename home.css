@@ -303,17 +303,6 @@ div[role="progressbar"] {
 .testimonial-name p {
 	font-size: 16px;
 }
-/*PORTFOLIO SECTION*/
-.gallery {
-	width: 100%;
-	float: left;
-	margin-top: 30px;
-}
-.gallery img {
-	height: auto;
-	width: 95%;
-	margin-bottom: 20px;
-}
 /*CONTACT US SECTION*/
 .contact form {
 	width: 66%;
