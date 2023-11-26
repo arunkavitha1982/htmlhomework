@@ -60,6 +60,14 @@ html, body
 	margin-top: 10px;
 	font-weight: 400;
 }
+.banner-section a:hover{
+	box-shadow: 0 0 5px #ffbf35,0 0 25px #ffbf35,0 0 50px #ffbf35,0 0 100px #ffbf35,0 0 200px #ffbf35
+}
+
+/* .banner-section i:hover{
+	box-shadow: 0 0 5px #ffbf35,0 0 25px #ffbf35,0 0 50px #ffbf35,0 0 100px #ffbf35,0 0 200px #ffbf35
+} */
+
 .banner-section a {
 	float: left;
 	text-decoration: none;
