@@ -6,26 +6,31 @@
 	-outline: 0;
 	font-family: Roboto, sans-serif, arial;
 }
-html, body 
-	{
+
+html,
+body {
 	font-size: 14px;
 	font-weight: 400;
 	background: #000000;
 	color: #fff;
 }
+
 .container {
 	width: 1100px;
 	margin: 0px auto;
 	display: table;
 }
+
 .width-33 {
 	width: 33%;
 	float: left;
 }
+
 .width-66 {
 	width: 66%;
 	float: left;
 }
+
 /*****MENU SECTION*****/
 .main-panel {
 	width: 100%;
@@ -39,29 +44,34 @@ html, body
 	font-size: 40px;
 	font-weight: 600;
 }
+
 /*****Main BANNER*****/
 .width-50 {
 	float: left;
 	width: 50%;
 }
+
 .banner-section {
 	width: 100%;
 	float: left;
 	margin-top: 25vh;
 }
+
 .banner-section h1 {
 	font-size: 48px;
 	margin-top: 10px;
 	font-weight: bolder;
 }
+
 .banner-section h2 {
 	font-size: 20px;
 	line-height: 25px;
 	margin-top: 10px;
 	font-weight: 400;
 }
-.banner-section a:hover{
-	box-shadow: 0 0 5px #ffbf35,0 0 25px #ffbf35,0 0 50px #ffbf35,0 0 100px #ffbf35,0 0 200px #ffbf35
+
+.banner-section a:hover {
+	box-shadow: 0 0 5px #ffbf35, 0 0 25px #ffbf35, 0 0 50px #ffbf35, 0 0 100px #ffbf35, 0 0 200px #ffbf35
 }
 
 /* .banner-section i:hover{
@@ -82,12 +92,14 @@ html, body
 	width: 50px;
 	line-height: 50px;
 }
+
 /*****Main BANNER IMAGE*****/
 .main-panel img {
 	margin-top: 10%;
 	width: 100%;
 	margin-left: 10%;
 }
+
 .span-col {
 	color: #ffbf35;
 }
@@ -103,19 +115,23 @@ nav a {
 	margin-left: 20px;
 	color: white;
 }
+
 /*ABOUT US SECTION*/
 .main-section {
 	width: 100%;
 	float: left;
 	padding: 110px 0px 110px 0px;
 }
+
 .width-100 {
 	width: 100%;
 	float: left;
 }
+
 .mt-20 {
 	margin-top: 20px;
 }
+
 .heading-text {
 	width: 100%;
 	float: left;
@@ -124,30 +140,36 @@ nav a {
 	margin-bottom: 50px;
 	color: #ffbf35;
 }
+
 .about-img {
 	width: 100%;
 	padding: 0px 50px;
 	margin-top: 20px;
 }
+
 .about-us {
 	width: 100%;
 	float: left;
 	padding: 20px;
 }
+
 .about-us p {
 	font-size: 16px;
 	margin-top: 15px;
 	line-height: 27px;
 }
+
 table {
 	width: 100%;
 }
+
 table th,
 table td {
 	font-size: 16px;
 	text-align: left;
 	padding: 5px 0px;
 }
+
 /*****SKILL SECTION*****/
 .skill {
 	margin-top: 30px;
@@ -173,27 +195,25 @@ table td {
 }
 
 div[role="progressbar"] {
-	color: #ffbf35;
+	color: #ffbf35; 
 	margin-left: 100px;
 	margin-bottom: 20px;
 	width: 100px;
-	;
 	height: 100px;
-	;
-	border-radius: 50%;
-
+	border-radius: 5%;
 	place-items: center;
 	display: grid;
-
 	--pgPercentage: var(--value);
 	background: radial-gradient(closest-side, black 80%, transparent 0 99.9%, black 0),
 		conic-gradient(#ffbf35 calc(var(--pgPercentage) * 1%), #ffe6af 0);
 
 }
+
 /*****EXPERIENCE SECTION*****/
 .bg-lightgrey {
 	background-color: #1a1a1a;
 }
+
 .edu-exp {
 	padding: 10px 0px;
 	width: 48%;
@@ -201,6 +221,7 @@ div[role="progressbar"] {
 	float: left;
 	padding-left: 10px;
 }
+
 .experience-list {
 	width: 100%;
 	float: left;
@@ -208,26 +229,31 @@ div[role="progressbar"] {
 	background: #262626;
 	margin-bottom: 20px;
 }
+
 .experience-content {
 	width: 100%;
 	float: left;
 	margin-left: 10px;
 }
+
 .experience-content h2 {
 
 	font-weight: 600;
 	margin-bottom: 5px;
 	font-size: 20px;
 }
+
 .experience-content h3 {
 	color: #ffbf35;
 	font-weight: 500;
 	margin-bottom: 2px;
 	font-size: 17px;
 }
+
 .experience-content p {
 	font-size: 15px;
 }
+
 /*SERVICE SECTION*/
 .service-list {
 	padding: 40px;
@@ -255,6 +281,7 @@ div[role="progressbar"] {
 	font-size: 15px;
 	line-height: 25px;
 }
+
 /*****Mentor section*****/
 .testimonial {
 	width: 32%;
@@ -311,12 +338,14 @@ div[role="progressbar"] {
 .testimonial-name p {
 	font-size: 16px;
 }
+
 /*CONTACT US SECTION*/
 .contact form {
 	width: 66%;
 	margin: 0px auto;
 	background: #262626;
 }
+
 .contact input,
 textarea {
 	width: 100%;
@@ -326,9 +355,11 @@ textarea {
 	padding: 10px;
 	border: 1px solid #a1a1a1;
 }
+
 .contact textarea {
 	height: 80px;
 }
+
 .contact button {
 	width: 100%;
 	float: left;
@@ -340,37 +371,42 @@ textarea {
 	border: none;
 	font-size: 16px;
 }
+
 .contact h3 {
 	font-size: 26px;
 	text-align: center;
 	margin-top: 60px;
 	color: #ffbf35;
 }
+
 .contact h4 {
 	font-size: 22px;
 	text-align: center;
 	margin-top: 10px;
 }
+
 .contact p {
 	text-align: center;
 	font-size: 16px;
 	margin-top: 5px;
 }
+
 @media screen and (max-width: 768px) {
-    nav {
-        flex-direction: column;
-        text-align: center;
-    }
+	nav {
+		flex-direction: column;
+		text-align: center;
+	}
 
-    nav a {
-        margin-bottom: 10px;
-    }
+	nav a {
+		margin-bottom: 10px;
+	}
 
-    .width-50,
-    .width-33 {
-        width: 100%;
-    }
+	.width-50,
+	.width-33 {
+		width: 100%;
+	}
 }
+
 @media screen and (max-width: 768px) {
 	.container {
 		width: 90%;
@@ -380,8 +416,9 @@ textarea {
 	.width-66,
 	.width-50 {
 		width: 100%;
-		
+
 	}
+
 	.width-50 {
 		margin-top: 10vb;
 	}
