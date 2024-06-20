@@ -7,6 +7,14 @@
 	font-family: Roboto, sans-serif, arial;
 }
 
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
 html,
 body {
 	font-size: 14px;
@@ -49,6 +57,11 @@ body {
 .width-50 {
 	float: left;
 	width: 50%;
+	margin-bottom: 50px;
+}
+#image{
+	border-radius: 50%;
+	width: 70%;
 }
 
 .banner-section {
@@ -145,6 +158,7 @@ nav a {
 	width: 100%;
 	padding: 0px 50px;
 	margin-top: 20px;
+	border-radius: 50%;
 }
 
 .about-us {
@@ -195,7 +209,7 @@ table td {
 }
 
 div[role="progressbar"] {
-	color: #ffbf35; 
+	color: #ffbf35;
 	margin-left: 100px;
 	margin-bottom: 20px;
 	width: 100px;
@@ -391,7 +405,36 @@ textarea {
 	margin-top: 5px;
 }
 
+
+
 @media screen and (max-width: 768px) {
+	#About {
+		margin-top: 140px;
+	}
+	.nav-links {
+        display: none;
+    }
+
+    .nav-links li {
+        margin: 0;
+        text-align: center;
+    }
+
+    .nav-links a {
+        padding: 10px;
+        /* border-bottom: 1px solid #444; */
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+	#icon {
+		margin-bottom: 10px;
+
+	}
+
+	
 	nav {
 		flex-direction: column;
 		text-align: center;
@@ -404,12 +447,14 @@ textarea {
 	.width-50,
 	.width-33 {
 		width: 100%;
-	}
-}
 
-@media screen and (max-width: 768px) {
+	}
+	.width-50{
+		margin-bottom: 10px;
+	}
+
 	.container {
-		width: 90%;
+		width: 85%;
 	}
 
 	.width-33,
