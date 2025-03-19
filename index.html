@@ -1,161 +1,413 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-  <link rel="icon" type="image/x-icon" href="image/Snapchat-971255011.jpg">
-  <title>My Page Title</title>
-  <link rel="icon" type="image/x-icon" href="image/Snapchat-971255011.jpg">
-  <style>
-    table,
-    th,
-    tr,
-    td {
-      border: 1px solid white;
-      border-radius: radius;
-      color: antiquewhite;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portfolio Navbar</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-    body {
-      background-image: url("image/IMG_20230525_103124_0455.jpg");
-      background-attachment: fixed;
-
-      background-size: cover;
-      background-repeat: no-repeat;
-
-
-
-    }
-
-    td {
-      color: antiquewhite;
-    }
-  </style>
-</head>
-<h1><b> AK </b></h1>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
+<body>
+    <!-- Starting Nav bar section -->
+    <nav class="navbar navbar-expand-lg fixed-top mb-5 bg-black">
+        <div class="container">
+            <a class="navbar-brand logo" href="index.html">
+                Port <span class="span-col">folio</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"
+                style="border-color: #ffbf35;">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" style="color: #ffbf35;font-size: medium;" href="#mainBanner">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link navbar-link" href="#About">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link navbar-link" href="#skill">My Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link navbar-link" href="#MyService">Education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link navbar-link" href="#Mentors">Mentor</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link navbar-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Ending Nav bar section -->
+
+    <!-- Starting Main banner Section -->
+
+    <div class="container mb-5" id="mainBanner" style="margin-top: 9%;">
+        <div class="row align-items-center">
+            <div class="col-md-6 col-sm-6 col-12 banner-section">
+                <span class="span-col">Welcome To My Portfolio</span>
+                <h1 id="name">Arun <span class="span-col">Kumar</span></h1>
+                <h2 id="clgName">- I'm a Student from Bharath College.</h2>
+
+                <!-- Social Media Icons -->
+                <a href="https://www.facebook.com/profile.php?id=100054511256281&mibextid=ZbWKwL" target="_blank">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="https://twitter.com/Arunkum262005" target="_blank">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/arun-kumar-862981293" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://www.instagram.com/i_am_a_rocker/" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://github.com/arunkavitha1982" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+
+            <div class="col-md-6 col-sm-6 col-12 text-center" id="photo">
+                <img src="image/my photo 1.jpg" alt="My Profile" class="img-fluid  rounded-circle mainImage" />
+            </div>
+        </div>
+    </div>
+    <!-- Ending Main banner Section -->
+
+    <div class="container-fluid about bg-lightgrey" id="About">
+        <div class="container mt-5 about-us">
+            <div class="row align-items-center">
+
+                <!-- Image Column -->
+                <div class="col-md-6 text-center d-none d-md-block">
+                    <img src="image/my photo 1.jpg" alt="My Profile" class="img-fluid rounded-circle about-img">
+                </div>
+
+                <!-- About Content -->
+                <div class="col-md-12 col-lg-6">
+                    <h2 class="heading-text">About Me</h2>
+                    <h5>I am available for Frontend Projects</h5>
+                    <p>
+                        Welcome to my portfolio, I'm Arunkumar, a BCA student at Bharath University. I am interested in
+                        software development. I was born in Masinagudi, Mudumalai, and learned a lot from my school
+                        teachers,
+                        which fueled my eagerness to learn new things.
+                    </p>
+
+                    <!-- Information Table -->
+                    <div class="row g-0">
+                        <div class="col-md-6 col-sm-6 col-12">
+                            <table class="table table-borderless  m-0">
+                                <tbody>
+                                    <tr>
+                                        <th>Name:</th>
+                                        <td>Arunkumar</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Email:</th>
+                                        <td><a href="mailto:arunkumar.msg26@gmail.com" style="text-decoration: none;color: white;">arunkumar.msg26@gmail.com</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>Birthday:</th>
+                                        <td>26 July, 2005</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Study:</th>
+                                        <td>Bharath University</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-12">
+                            <table class="table table-borderless m-0">
+                                <tbody>
+                                    <tr>
+                                        <th>Phone:</th>
+                                        <td><a href="tel:6381689021" style="text-decoration: none;color: white;">6381689021</a></td>
+                                    </tr>
+                                    <tr>
+                                        <th>City:</th>
+                                        <td>Nilgiris, Tamilnadu, INDIA</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Freelancer:</th>
+                                        <td>Available</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Website:</th>
+                                        <td>www.Arunkumar.com</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container  mb-5" id="skill">
+        <div class="row mt-5 mb-5">
+            <h2 className="heading-text" id="heading-text">My Skills</h2>
+            <div class="col-md-6 col-12">
+                <div class="skill">
+                    <b>Javascript</b>
+                    <span>80%</span>
+                    <div>
+                        <span style="width:80%"></span>
+                    </div>
+                </div>
+                <div class="skill">
+                    <b>OOPS</b>
+                    <span>91%</span>
+                    <div>
+                        <span style="width:91%"></span>
+                    </div>
+                </div>
+                <div class="skill">
+                    <b>Python</b>
+                    <span>85%</span>
+                    <div>
+                        <span style="width:85%"></span>
+                    </div>
+                </div>
+                <div class="skill">
+                    <b>Kotlin</b>
+                    <span>79%</span>
+                    <div>
+                        <span style="width:79%"></span>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <b>React JS</b>
+                    <span>80%</span>
+                    <div>
+                        <span style="width:80%"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-12">
+                <div class="container">
+                    <div class="row mt-5">
+                        <div class="col-6 d-flex justify-content-center">
+
+                            <div role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"
+                                style="--value:95">
+                                Html-95</div>
+
+                        </div>
+                        <div class="col-6 d-flex justify-content-center">
+                            <div role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"
+                                style="--value:85">
+                                CSS-85</div>
+
+
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6 d-flex justify-content-center">
+
+                            <div role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"
+                                style="--value:80">
+                                SQL-80</div>
+                        </div>
+                        <div class="col-6 d-flex justify-content-center">
+                            <div role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"
+                                style="--value:85">
+                                Dart-85</div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="main-section container-fluid bg-lightgrey mt-5" id="MyService">
+        <h2 class="heading-text text-center">My Service &amp; My Experience</h2>
+        <div class="container">
+            <div class="row">
+                <!-- Education Column -->
+                <div class="col-md-6 col-12">
+                    <div class="experience-list">
+                        <div class="experience-content">
+                            <h2>GRG School, The Nilgiris</h2>
+                            <h3>2011-2020</h3>
+                            <p>1st Standard to 10th Standard</p>
+                        </div>
+                    </div>
+                    <div class="experience-list">
+                        <div class="experience-content">
+                            <h2>GTR Karkudi, The Nilgiris</h2>
+                            <h3>2021-2023</h3>
+                            <p>11th Standard to 12th Standard</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Experience Column -->
+                <div class="col-md-6 col-12">
+                    <div class="experience-list">
+                        <div class="experience-content">
+                            <h2>University of Bharath</h2>
+                            <h3>2023-2026</h3>
+                            <p>Bachelor in Computer Application</p>
+                        </div>
+                    </div>
+                    <div class="experience-list">
+                        <div class="experience-content">
+                            <h2>Arjava Tech</h2>
+                            <h3>2024-2025</h3>
+                            <p>Front End Developer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="main-section container-fluid mb-5 pt-5 pb-5" id="Mentors">
+        <h2 class="heading-text text-center">My Mentors</h2>
+        <div class="container">
+            <div class="row">
+
+                <!-- Mentor 1 -->
+                <div class="col-md-4 col-12">
+                    <div class="testimonial">
+                        <div class="testimonial-content">
+                            <div class="testimonial-img">
+                                <img src="https://www.hope3.org/images/palani_desk.png" alt="Mr. Palaniappan">
+                            </div>
+                            <i class="fa fa-quote-left"></i>
+                            <p id="content">Mr. Palaniappan Vairavan is an educator, entrepreneur, and a visionary who
+                                believes that
+                                education can alleviate most of the key challenges faced by society today. He is the
+                                founder of HOPE3
+                                Foundation and the Dean of the Computer Science.</p>
+                            <div class="testimonial-name">
+                                <h5>Mr. Palaniappan</h5>
+                                <p>Amazon, USA</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mentor 2 -->
+                <div class="col-md-4 col-12">
+                    <div class="testimonial">
+                        <div class="testimonial-content">
+                            <div class="testimonial-img">
+                                <img src="https://www.hope3.org/images/shiva_desk.png" alt="Mr. Sivakumar">
+                            </div>
+                            <i class="fa fa-quote-left"></i>
+                            <p id="content">Sivakumar is passionate about learning and teaching. He has been part of the
+                                Hope 3
+                                Foundation as a member in governing body since the inception of the non profit
+                                organization. He is a
+                                Mugavari Foundation volunteer.</p>
+                            <div class="testimonial-name">
+                                <h5>Mr. Sivakumar</h5>
+                                <p>Managing Trustee, Hope3 India Foundation</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mentor 3 -->
+                <div class="col-md-4 col-12">
+                    <div class="testimonial">
+                        <div class="testimonial-content">
+                            <div class="testimonial-img">
+                                <img src="image/marimuthu.png" alt="Mr. Marimuthu">
+                            </div>
+                            <i class="fa fa-quote-left"></i>
+                            <p id="content">He is working as a Tamil teacher in a tribal higher secondary school located
+                                in Kargudi,
+                                Nilgiri district. He worked as a Head Master for two years. He is also helping the
+                                students in that
+                                school for their higher studies.</p>
+                            <div class="testimonial-name">
+                                <h5>Mr. Marimuthu</h5>
+                                <p>Teacher</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-fluid bg-lightgrey contact" id="contact">
+        <h2 class="heading-text text-center">Get In Touch</h2>
+    
+        <form>
+          <input type="text" placeholder="Full Name..." required />
+          <input type="email" placeholder="Full Email Id..." required />
+          <input type="tel" placeholder="Full Mobile No..." required />
+          <textarea placeholder="Enter Address..." required></textarea>
+          <button type="submit">Submit</button>
+        </form>
+    
+        <div class="row mt-5">
+    
+          <!-- Address -->
+          <div class="col-md-4 col-12 text-center">
+            <h3>
+              <a href="https://maps.app.goo.gl/wK3HjrvPD73wLuLZ7" target="_blank" rel="noopener noreferrer">
+                <i class="fa fa-map-marker" style="color: #ffbf35"></i>
+              </a>
+            </h3>
+            <h4>Address</h4>
+            <p style="color: white;">5/274, Group House, Masinagudi, The Nilgiris, Tamilnadu, 643223.</p>
+          </div>
+    
+          <!-- Phone -->
+          <div class="col-md-4 col-12 text-center">
+            <h3>
+              <a href="tel:6381689021">
+                <i class="fa fa-phone" style="color: #ffbf35"></i>
+              </a>
+            </h3>
+            <h4>Phone</h4>
+            <p><a href="tel:6381689021" style="color: white; text-decoration: none;">6381689021</a></p>
+          </div>
+    
+          <!-- Email -->
+          <div class="col-md-4 col-12 text-center">
+            <h3>
+              <a href="mailto:arunkumar.msg26@gmail.com">
+                <i class="fa fa-envelope" style="color: #ffbf35;"></i>
+              </a>
+            </h3>
+            <h4>Email</h4>
+            <p><a href="mailto:arunkumar.msg26@gmail.com" style="color: white; text-decoration: none;">arunkumar.msg26@gmail.com</a></p>
+          </div>
+    
+        </div>
+      </div>
 
 
 
-<br>
-<h1 style="color:blue" ;>FAMILY</h1><br>
-<!-- image -->
-
-<img src="image/download.jpeg" alt="mudumalai" usemap="#bordermap">
-
-<map name="bordermap">
-  <area shape="rect" coords="40,63,186,162" alt="Computer" href="https://www.youtube.com/"></br>
-
-</map>
-<h1>
-  <table style="width:50%">
-    <tr>
-      <th>AMMA</th>
-      <th>APPA</th>
-      <th>MAMA</th>
-      <th>chitthi</th>
-      <th>chitthappa</th>
-    </tr>
-    <tr>
-      <td>KAVITHA</td>
-      <td>Kumar</td>
-      <td>siddu</td>
-      <td>sannu</td>
-      <td>madevan</td>
-
-    </tr>
-    <tr>
-      <td> My Love</td>
-      <td>I miss you</td>
-      <td>the boss</td>
-      <td>my next mother</td>
-      <td>my next dad</td>
 
 
-
-    </tr>
-    <tr>
-      <td>Sweety</td>
-      <td>crying</td>
-      <td>my mass</td>
-      <td>caring</td>
-      <td>emotion</td>
-    </tr>
-  </table>
-</h1>
-
-<h2>
-  <pre>
-      Family is most important in our life
-      Family is not an important thing. It's everything
-      The memories we make with our family is everything
-      The family is one of nature's masterpieces
-      In time of test, family is best
-    </pre>
-</h2>
-
-<br><img src="image/rayudu.jpg" width="40%"></br>
-
-<br><img src="/image/IMG-20230401-WA0052.jpg" alt="masinagudi" usemap="#masinagudi"><br><br>
-
-<map name="masinagudi">
-  <area shape="poly"
-    coords="559,422,501,429,462,449,443,500,446,545,443,593,446,603,465,632,485,650,481,671,474,684,480,695,480,704,480,740,477,783,474,798,475,811,490,823,490,852,501,865,509,880,509,890,514,950,505,1022,518,1040,534,1048,534,1066,539,1079,554,1100,563,1114,572,1122,582,1154,591,1180,601,1197,612,1211,622,1216,634,1223,635,1233,651,1251,660,1270,665,1290,669,1302,682,1311,690,1314,701,1320,715,1344,740,1382,749,1388,760,1396,772,1409,783,1414,788,1429,796,1450,796,1461,803,1490,813,1520,835,1532,846,1520,851,1511,854,1497,882,1272,888,1272,888,1248,829,1243,799,1245,792,1223,792,1192,796,1161,775,1114,754,1077,740,1059,715,1034,694,997,670,925,667,901,680,902,698,902,704,890,708,875,724,876,741,866,749,830,757,758,730,759,724,773,717,784,704,785,690,783,690,783,667,780,660,763,660,740,655,720,634,665,644,644,645,625,645,613,645,588,644,532,660,507,651,487"
-    alt="masinagudi" href="https://www.thrillophilia.com/best-places-to-visit-in-masinagudi">
-
-
-</map>
-
-<img src="image/what-is-venn-1.jpg" alt="vennil" usemap="#arunkumar">
-<map name="arunkumar">
-  <area shape="poly"
-    coords="562,188,440,135,320,151,218,207,170,272,131,365,130,477,172,575,218,633,286,685,393,707,479,696,518,657,496,592,455,500,448,376,493,249,562,188"
-    href="https://www.discoveryplus.in/" alt="discovery">
-  <area shape="poly" coords="568,186,494,268,458,365,460,458,492,557,576,646,644,581,689,497,695,388,649,276,568,186"
-    href="https://earth.google.com/web/@0,-4.56980005,0a,22251752.77375655d,35y,0h,0t,0r" alt="google earth">
-  <area shape="poly"
-    coords="579,182,692,145,788,151,872,175,924,223,989,1009,425,979,543,916,629,833,681,737,701,645,684,584,661,644,596,695,492,705,390,682,312,646,247,579,182"
-    href="https://www.bbcearth.com/" alt="bbc earth">
-</map>
-<H1><br><a href="https://www.youtube.com">youtube</a></br></h1>
-
-<button onclick="getLocation()">Try It</button>
-
-<p id="demo"></p>
-
-<script>
-  var x = document.getElementById("demo");
-
-  function getLocation() {
-    if (navigator.geolocation) {
-      navigator.geolocation.getCurrentPosition(showPosition, showError);
-    } else {
-      x.innerHTML = "Geolocation is not supported by this browser.";
-    }
-  }
-
-  function showPosition(position) {
-    x.innerHTML = "Latitude: " + position.coords.latitude +
-      "<br>Longitude: " + position.coords.longitude;
-  }
-
-  function showError(error) {
-    switch (error.code) {
-      case error.PERMISSION_DENIED:
-        x.innerHTML = "User denied the request for Geolocation."
-        break;
-      case error.POSITION_UNAVAILABLE:
-        x.innerHTML = "Location information is unavailable."
-        break;
-      case error.TIMEOUT:
-        x.innerHTML = "The request to get user location timed out."
-        break;
-      case error.UNKNOWN_ERROR:
-        x.innerHTML = "An unknown error occurred."
-        break;
-    }
-  }
-</script>
-</form>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

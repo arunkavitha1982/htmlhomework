@@ -1,128 +1,166 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>My Portfolio</title>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" href="image/logo.png">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="home.css">
+    <title>Portfolio Navbar</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
 <body>
-    <div class="main-panel">
+    <!-- Starting Nav bar section -->
+    <nav class="navbar navbar-expand-lg fixed-top mb-5 bg-black">
         <div class="container">
-            <div class="width-33 logo">Port <span class="span-col">folio</span>
+            <a class="navbar-brand logo" href="portfolio.html">
+                Port <span class="span-col">folio</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"
+                style="border-color: #ffbf35;">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" style="color: #ffbf35;font-size: medium;" href="#mainBanner">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link navbar-link" href="#About">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link navbar-link" href="#skill">My Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link navbar-link" href="#MyService">Education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link navbar-link" href="#Mentors">Mentor</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link navbar-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
             </div>
-            <div class="width-66">
-                <nav class="nav-links">
-                    <a href="#home">
-                        <span class="span-col">Home</span>
-                    </a>
-                    <a href="#About">About me</a>
-                    <a href="#My Skills">My Skills</a>
-                    <a href="#Education">Education</a>
-                    <a href="#My Service">My Services</a>
-                    <a href="#Mentors">Mentor</a>
-                </nav>
+        </div>
+    </nav>
+    <!-- Ending Nav bar section -->
+
+    <!-- Starting Main banner Section -->
+
+    <div class="container mb-5" id="mainBanner" style="margin-top: 9%;">
+        <div class="row align-items-center">
+            <div class="col-md-6 col-sm-6 col-12 banner-section">
+                <span class="span-col">Welcome To My Portfolio</span>
+                <h1 id="name">Arun <span class="span-col">Kumar</span></h1>
+                <h2 id="clgName">- I'm a Student from Bharath College.</h2>
+
+                <!-- Social Media Icons -->
+                <a href="https://www.facebook.com/profile.php?id=100054511256281&mibextid=ZbWKwL" target="_blank">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="https://twitter.com/Arunkum262005" target="_blank">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/arun-kumar-862981293" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://www.instagram.com/i_am_a_rocker/" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://github.com/arunkavitha1982" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
             </div>
 
-        </div>
-        <!------Main banner------>
-        <div class="container" id="home">
-            <div class="width-50">
-                <div class="banner-section" id="icon">
-                    <span class="span-col">Welcome To My Portfolio</span>
-                    <h1>Arun <span class="span-col">Kumar</span>
-                    </h1>
-                    <h2>- I'm a Student from Bharath College.</h2>
-                    <a href="https://www.facebook.com/profile.php?id=100054511256281&mibextid=ZbWKwL" target="_blank">
-                        <i class="fa fa-facebook"></i>
-                    </a>
-                    <a href="https://twitter.com/Arunkum262005" target="_blank">
-                        <i class="fa fa-twitter"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/in/arun-kumar-862981293" target="_blank">
-                        <i class="fa fa-linkedin"></i>
-                    </a>
-                    <a href="https://www.instagram.com/i_am_a_rocker/" target="_blank">
-                        <i class="fa fa-instagram"></i>
-                    </a>
-                    <a href="https://github.com/arunkavitha1982" target="_blank">
-                        <i class="fa fa-github"></i>
-                    </a>
-                </div>
-            </div>
-            <div class="width-50">
-                <img src="image/my photo 1.jpg" id="image">
+            <div class="col-md-6 col-sm-6 col-12 text-center" id="photo">
+                <img src="image/my photo 1.jpg" alt="My Profile" class="img-fluid  rounded-circle mainImage" />
             </div>
         </div>
     </div>
-    <!-- About me -->
-    <div class="main-section bg-lightgrey" id="About">
-        <div class="container">
-            <div class="width-50">
-                <img src="image/my photo 1.jpg" class="about-img">
-            </div>
-            <div class="width-50">
-                <div class="about-us">
+    <!-- Ending Main banner Section -->
+
+    <div class="container-fluid about bg-lightgrey" id="About">
+        <div class="container mt-5 about-us">
+            <div class="row align-items-center">
+
+                <!-- Image Column -->
+                <div class="col-md-6 text-center d-none d-md-block">
+                    <img src="image/my photo 1.jpg" alt="My Profile" class="img-fluid rounded-circle about-img">
+                </div>
+
+                <!-- About Content -->
+                <div class="col-md-12 col-lg-6">
                     <h2 class="heading-text">About Me</h2>
-                    <h3>I am available for Frontend Project</h3>
-                    <p>Welcome to my portfolio, I'm Arunkumar, BCA student at Bharath University. I am interested in
-                        software developing. I was born in a town, Masinagudi in Mudumalai. I learned a lot from my
-                        school teacher,that helped me to learn new things with eager and excitement. </p>
-                    <div class="width-50 mt-20">
-                        <table cellspacing="8" cellpadding="8">
-                            <tr>
-                                <th>Name:</th>
-                                <td>Arunkumar</td>
-                            </tr>
-                            <tr>
-                                <th>Email:</th>
-                                <td><a href="mailto:arunkumar.msg26@gmail.com"
-                                        style="color: white;text-decoration: none;">arunkumar.msg26.com</a></td>
-                            </tr>
-                            <tr>
-                                <th>Birthday:</th>
-                                <td> 26 july,2005</td>
-                            </tr>
-                            <tr>
-                                <th>Study:</th>
-                                <td> Bharath University</td>
-                            </tr>
-                        </table>
+                    <h5>I am available for Frontend Projects</h5>
+                    <p>
+                        Welcome to my portfolio, I'm Arunkumar, a BCA student at Bharath University. I am interested in
+                        software development. I was born in Masinagudi, Mudumalai, and learned a lot from my school
+                        teachers,
+                        which fueled my eagerness to learn new things.
+                    </p>
+
+                    <!-- Information Table -->
+                    <div class="row g-0">
+                        <div class="col-md-6 col-sm-6 col-12">
+                            <table class="table table-borderless  m-0">
+                                <tbody>
+                                    <tr>
+                                        <th>Name:</th>
+                                        <td>Arunkumar</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Email:</th>
+                                        <td><a href="mailto:arunkumar.msg26@gmail.com" style="text-decoration: none;color: white;">arunkumar.msg26@gmail.com</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>Birthday:</th>
+                                        <td>26 July, 2005</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Study:</th>
+                                        <td>Bharath University</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-12">
+                            <table class="table table-borderless m-0">
+                                <tbody>
+                                    <tr>
+                                        <th>Phone:</th>
+                                        <td><a href="tel:6381689021" style="text-decoration: none;color: white;">6381689021</a></td>
+                                    </tr>
+                                    <tr>
+                                        <th>City:</th>
+                                        <td>Nilgiris, Tamilnadu, INDIA</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Freelancer:</th>
+                                        <td>Available</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Website:</th>
+                                        <td>www.Arunkumar.com</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
-                    <div class="width-50 mt-20">
-                        <table cellspacing="8" cellpadding="10">
-                            <tr>
-                                <th>Phone:</th>
-                                <td><a href="tel:6381689021" style="color: white;text-decoration: none;">6381689021</a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th>City:</th>
-                                <td>Nilgiris,Tamilnadu,INDIA</td>
-                            </tr>
-                            <tr>
-                                <th>Freelancer:</th>
-                                <td> Available</td>
-                            </tr>
-                            <tr>
-                                <th>Website:</th>
-                                <td> www.Arunkumar.com</td>
-                            </tr>
-                        </table>
-                    </div>
+
                 </div>
             </div>
         </div>
     </div>
-    <!------Skill section------>
-    <div class="main-section" id="My Skills">
-        <div class="container">
-            <h2 class="heading-text">My Skills</h2>
-            <div class="width-50">
+
+    <div class="container  mb-5" id="skill">
+        <div class="row mt-5 mb-5">
+            <h2 className="heading-text" id="heading-text">My Skills</h2>
+            <div class="col-md-6 col-12">
                 <div class="skill">
                     <b>Javascript</b>
                     <span>80%</span>
@@ -151,162 +189,225 @@
                         <span style="width:79%"></span>
                     </div>
                 </div>
+
+                <div class="skill">
+                    <b>React JS</b>
+                    <span>80%</span>
+                    <div>
+                        <span style="width:80%"></span>
+                    </div>
+                </div>
             </div>
-            <div class="width-50">
-                <div class="width-50">
-                    <div role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="--value:95">
-                        Html-95</div>
-                </div>
-                <div class="width-50">
-                    <div role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="--value:85">
-                        CSS-85</div>
-                </div>
-                <div class="width-50">
-                    <div role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="--value:80">
-                        React-80</div>
-                </div>
-                <div class="width-50">
-                    <div role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="--value:85">
-                        Python-85</div>
+            <div class="col-md-6 col-12">
+                <div class="container">
+                    <div class="row mt-5">
+                        <div class="col-6 d-flex justify-content-center">
+
+                            <div role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"
+                                style="--value:95">
+                                Html-95</div>
+
+                        </div>
+                        <div class="col-6 d-flex justify-content-center">
+                            <div role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"
+                                style="--value:85">
+                                CSS-85</div>
+
+
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6 d-flex justify-content-center">
+
+                            <div role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"
+                                style="--value:80">
+                                SQL-80</div>
+                        </div>
+                        <div class="col-6 d-flex justify-content-center">
+                            <div role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"
+                                style="--value:85">
+                                Dart-85</div>
+
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+
     </div>
-    <!------Experience Section------>
-    <div class="main-section bg-lightgrey" id="Education">
+
+
+    <div class="main-section container-fluid bg-lightgrey mt-5" id="MyService">
+        <h2 class="heading-text text-center">My Service &amp; My Experience</h2>
         <div class="container">
-            <h2 class="heading-text">Education & Experience</h2>
-            <div class="edu-exp">
-
-                <div class="experience-list">
-                    <div class="experience-content">
-                        <h2>GRG School,The Nilgiris </h2>
-                        <h3>2011-2020</h3>
-                        <p>1st Standard to 10th Standard</p>
+            <div class="row">
+                <!-- Education Column -->
+                <div class="col-md-6 col-12">
+                    <div class="experience-list">
+                        <div class="experience-content">
+                            <h2>GRG School, The Nilgiris</h2>
+                            <h3>2011-2020</h3>
+                            <p>1st Standard to 10th Standard</p>
+                        </div>
                     </div>
-                </div>
-                <div class="experience-list">
-                    <div class="experience-content">
-                        <h2>GTR Karkudi,The Nilgiris</h2>
-                        <h3>2021-2023</h3>
-                        <p>11st Sandard to 12th Standard</p>
-                    </div>
-                </div>
-
-            </div>
-            <div class="edu-exp">
-                <div class="experience-list">
-                    <div class="experience-content">
-                        <h2>University of Bharath</h2>
-                        <h3>2023-2026</h3>
-                        <p>Bachelor in Computer Application</p>
-                    </div>
-                </div>
-                <div class="experience-list">
-                    <div class="experience-content">
-                        <h2>Arjava Tech</h2>
-                        <h3>2024-2025</h3>
-                        <p>Front End Developer</p>
+                    <div class="experience-list">
+                        <div class="experience-content">
+                            <h2>GTR Karkudi, The Nilgiris</h2>
+                            <h3>2021-2023</h3>
+                            <p>11th Standard to 12th Standard</p>
+                        </div>
                     </div>
                 </div>
 
+                <!-- Experience Column -->
+                <div class="col-md-6 col-12">
+                    <div class="experience-list">
+                        <div class="experience-content">
+                            <h2>University of Bharath</h2>
+                            <h3>2023-2026</h3>
+                            <p>Bachelor in Computer Application</p>
+                        </div>
+                    </div>
+                    <div class="experience-list">
+                        <div class="experience-content">
+                            <h2>Arjava Tech</h2>
+                            <h3>2024-2025</h3>
+                            <p>Front End Developer</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-    <!-- Mentor page -->
-    <div class="main-section bg-lightgrey" id="Mentors">
+
+
+    <div class="main-section container-fluid mb-5 pt-5 pb-5" id="Mentors">
+        <h2 class="heading-text text-center">My Mentors</h2>
         <div class="container">
-            <h2 class="heading-text">My Mentors </h2>
-            <div class="testimonial">
-                <div class="testimonial-content">
-                    <div class="testimonial-img">
-                        <img src="https://www.hope3.org/images/palani_desk.png">
-                    </div>
-                    <i class="fa fa-quote-left"></i>
-                    <p> Mr. Palaniappan Vairavan is an educator, entrepreneur, and a visionary who believes that
-                        education can alleviate most of the key challenges faced by society today. He is the founder
-                        of HOPE3 Foundation and the Dean of the Computer Science .</p>
-                    <div class="testimonial-name">
-                        <h5>Mr Palaniappan</h5>
-                        <p>Amazon, USA</p>
-                    </div>
-                </div>
-            </div>
-            <div class="testimonial">
-                <div class="testimonial-content">
-                    <div class="testimonial-img">
-                        <img src="https://www.hope3.org/images/shiva_desk.png">
-                    </div>
-                    <i class="fa fa-quote-left"></i>
-                    <p> Sivakumar is passionate about learning and teaching. He has been part of
-                        the Hope 3 Foundation as a member in governing body since the inception of the non profit
-                        organization.He is an Mugavari Foundation volunteer</p>
-                    <div class="testimonial-name">
-                        <h5>Mr Sivakumar</h5>
-                        <p>Managing Trustee,
-                            Hope3 India Foundation</p>
-                    </div>
-                </div>
-            </div>
-            <div class="testimonial">
-                <div class="testimonial-content">
-                    <div class="testimonial-img">
-                        <img src="image/marimuthu.png">
-                    </div>
-                    <i class="fa fa-quote-left"></i>
-                    <p> </p>
-                    <div class="testimonial-name">
-                        <p>He is working as a Tamil teacher in a tribal higher secondary school located in Kargudi,
-                            Nilgiri district.He worked as a head Master for two years.He is also helping the students in
-                            that school for their higher studies.</p>
-                        <h5>Mr.Marimuthu</h5>
-                        <p>Teacher</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-------------Contact us section----------------------->
-    <div class="main-section contact bg-lightgrey">
-        <div class="container">
-            <h2 class="heading-text">Get In Touch</h2>
-            <div class="width-100">
-                <form>
-                    <input type="text" placeholder="Full Name...">
-                    <input type="text" placeholder="Full Email Id...">
-                    <input type="text" placeholder="Full Mobile No...">
-                    <textarea placeholder="Enter Address..."></textarea>
-                    <button type="submit">Submit</button>
-                </form>
-            </div>
-            <div class="width-33">
-                <h3>
-                    <a href="https://maps.app.goo.gl/wK3HjrvPD73wLuLZ7" style="color:#ffbf35;" target="_blank"><i
-                            class="fa fa-map-marker"></i></a>
-                </h3>
-                <h4>Address</h4>
-                <p>5/274,Group House,Masinagudi,The </p>
-                <p>Nilgiris,Tamilnadu,643223.</p>
-            </div>
-            <div class="width-33">
-                <h3>
-                    <i class="fa fa-phone"></i>
-                </h3>
-                <h4>Phone</h4>
-                <p><a href="tel:6381689021" style="color: white;text-decoration: none;">+91 6381689021</a></p>
-            </div>
-            <div class="width-33">
-                <h3>
-                    <i class="fa fa-envelope-o"></i>
-                </h3>
-                <h4>Email</h4>
+            <div class="row">
 
-                <p><a href="mailto:arunkumar.msg26@gmail.com"
-                        style="color: white;text-decoration: none;">arunkumar.msg26@gmail.com</a></p>
+                <!-- Mentor 1 -->
+                <div class="col-md-4 col-12">
+                    <div class="testimonial">
+                        <div class="testimonial-content">
+                            <div class="testimonial-img">
+                                <img src="https://www.hope3.org/images/palani_desk.png" alt="Mr. Palaniappan">
+                            </div>
+                            <i class="fa fa-quote-left"></i>
+                            <p id="content">Mr. Palaniappan Vairavan is an educator, entrepreneur, and a visionary who
+                                believes that
+                                education can alleviate most of the key challenges faced by society today. He is the
+                                founder of HOPE3
+                                Foundation and the Dean of the Computer Science.</p>
+                            <div class="testimonial-name">
+                                <h5>Mr. Palaniappan</h5>
+                                <p>Amazon, USA</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mentor 2 -->
+                <div class="col-md-4 col-12">
+                    <div class="testimonial">
+                        <div class="testimonial-content">
+                            <div class="testimonial-img">
+                                <img src="https://www.hope3.org/images/shiva_desk.png" alt="Mr. Sivakumar">
+                            </div>
+                            <i class="fa fa-quote-left"></i>
+                            <p id="content">Sivakumar is passionate about learning and teaching. He has been part of the
+                                Hope 3
+                                Foundation as a member in governing body since the inception of the non profit
+                                organization. He is a
+                                Mugavari Foundation volunteer.</p>
+                            <div class="testimonial-name">
+                                <h5>Mr. Sivakumar</h5>
+                                <p>Managing Trustee, Hope3 India Foundation</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mentor 3 -->
+                <div class="col-md-4 col-12">
+                    <div class="testimonial">
+                        <div class="testimonial-content">
+                            <div class="testimonial-img">
+                                <img src="image/marimuthu.png" alt="Mr. Marimuthu">
+                            </div>
+                            <i class="fa fa-quote-left"></i>
+                            <p id="content">He is working as a Tamil teacher in a tribal higher secondary school located
+                                in Kargudi,
+                                Nilgiri district. He worked as a Head Master for two years. He is also helping the
+                                students in that
+                                school for their higher studies.</p>
+                            <div class="testimonial-name">
+                                <h5>Mr. Marimuthu</h5>
+                                <p>Teacher</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>
-    <script src="script.js"></script>
+
+
+    <div class="container-fluid bg-lightgrey contact" id="contact">
+        <h2 class="heading-text text-center">Get In Touch</h2>
+    
+        <form>
+          <input type="text" placeholder="Full Name..." required />
+          <input type="email" placeholder="Full Email Id..." required />
+          <input type="tel" placeholder="Full Mobile No..." required />
+          <textarea placeholder="Enter Address..." required></textarea>
+          <button type="submit">Submit</button>
+        </form>
+    
+        <div class="row mt-5">
+    
+          <!-- Address -->
+          <div class="col-md-4 col-12 text-center">
+            <h3>
+              <a href="https://maps.app.goo.gl/wK3HjrvPD73wLuLZ7" target="_blank" rel="noopener noreferrer">
+                <i class="fa fa-map-marker" style="color: #ffbf35"></i>
+              </a>
+            </h3>
+            <h4>Address</h4>
+            <p style="color: white;">5/274, Group House, Masinagudi, The Nilgiris, Tamilnadu, 643223.</p>
+          </div>
+    
+          <!-- Phone -->
+          <div class="col-md-4 col-12 text-center">
+            <h3>
+              <a href="tel:6381689021">
+                <i class="fa fa-phone" style="color: #ffbf35"></i>
+              </a>
+            </h3>
+            <h4>Phone</h4>
+            <p><a href="tel:6381689021" style="color: white; text-decoration: none;">6381689021</a></p>
+          </div>
+    
+          <!-- Email -->
+          <div class="col-md-4 col-12 text-center">
+            <h3>
+              <a href="mailto:arunkumar.msg26@gmail.com">
+                <i class="fa fa-envelope" style="color: #ffbf35;"></i>
+              </a>
+            </h3>
+            <h4>Email</h4>
+            <p><a href="mailto:arunkumar.msg26@gmail.com" style="color: white; text-decoration: none;">arunkumar.msg26@gmail.com</a></p>
+          </div>
+    
+        </div>
+      </div>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
