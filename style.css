@@ -24,7 +24,9 @@ body {
 .span-col {
 	color: #ffbf35 !important;
 }
-
+.active{
+	margin-left: 20px;
+}
 .navbar-link {
 	text-decoration: none !important;
 	font-size: 16px !important;
